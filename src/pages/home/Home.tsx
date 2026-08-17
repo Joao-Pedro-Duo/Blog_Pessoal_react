@@ -2,70 +2,24 @@
 
 function Home() {
   return (
-    <div
-        style={{
-            backgroundColor: "#312e81",
-            display: "flex",
-            justifyContent: "center"
-        }}
+    /* Container Principal */
+    <div className="bg-indigo-900 flex justify-center">
 
-    >
-
-        <div 
-            style={{
-                display: "grid",
-                gridTemplateColumns: "1fr 1fr",
-                color: "white",
-                maxWidth: "1280px",
-             }}
-        >
+          {/* Seção com 2 colunas */}
+          <div className="container grid grid-cols-1 md:grid-cols-2 text-white">
 
             {/* Conteúdo de texto */}
-            <div
-                style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    gap: "1rem",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    paddingTop: "1rem",
-                    paddingBottom: "1rem",
-
-                }}
-            >
-                <h2
-                    style={{
-                        fontSize: "3rem",
-                        fontWeight: "bold"
-                    }}
-
-                >    
+            <div className="flex flex-col gap-4 items-center justify-center py-4">
+                <h2 className="text-2xl md:text-5xl font-bold">    
                     Seja Bem Vindo(a)!
                 </h2>
 
-                <p
-                    style={{
-                        fontSize: "1.25rem"
-                    }}
-                >    
+                <p className="text-xl">    
                     Expresse aqui seus pensamentos
                 </p>
 
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "space-around",
-                        gap: "1rem",
-                    }}
-                > 
-                    <div
-                        style={{
-                            borderRadius: "0.5rem",
-                            border: "2px solid white",
-                            padding: "0.5rem 1rem",
-                            cursor: "pointer"
-                        }}
-                    >
+                <div className="flex justify-around gap-4"> 
+                    <div className="rounded-lg border-2 border-solid border-white py-2 px-4">
                         Nova Postagem
                     </div>
 
@@ -73,18 +27,11 @@ function Home() {
            </div>
             
             {/* Imagem da página home */}
-            <div
-                style={{ 
-                    display: "flex",
-                    justifyContent: "center"
-                }}
-            >    
-                <img
+            <div className="flex justify-center">
+                <img 
                     src="https://i.imgur.com/fyfri1v.png"
                     alt="Imagem da página Home"
-                    style={{
-                        width: "66%"
-                     }}
+                    className="w-2/3"
                 />
 
             </div>
